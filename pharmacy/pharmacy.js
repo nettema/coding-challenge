@@ -1,15 +1,10 @@
-export class Drug {
-  constructor(name, expiresIn, benefit) {
-    this.name = name;
-    this.expiresIn = expiresIn;
-    this.benefit = benefit;
-  }
-}
-
-export class Pharmacy {
+export default class Pharmacy {
   constructor(drugs = []) {
     this.drugs = drugs;
   }
+
+  // TODO: update benefit logic should be moved to drug
+  // TODO: updateBenefitValue should just call updateBenefit of drugs
   updateBenefitValue() {
     for (var i = 0; i < this.drugs.length; i++) {
       if (
