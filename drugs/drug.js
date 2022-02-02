@@ -2,6 +2,7 @@ import DrugBenefitUpdateStrategyFactory from "./drugBenefitValueUpdateStrategyFa
 
 const MAX_BENEFIT = 50;
 const MIN_BENEFIT = 0;
+
 export default class Drug {
   constructor(name, expiresIn, benefit) {
     this.name = name;
