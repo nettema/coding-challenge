@@ -11,7 +11,7 @@ function getDrugs() {
   ];
 }
 
-function runPharmacy() {
+(() => {
   const drugs = getDrugs();
   const trial = new Pharmacy(drugs);
   const log = [];
@@ -21,6 +21,4 @@ function runPharmacy() {
   }
 
   saveLog(log);
-}
-
-runPharmacy();
+})();
